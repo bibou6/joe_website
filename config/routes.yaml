@@ -1,3 +1,11 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+app_lucky_number:
+    path: /lucky/number
+    controller: App\Controller\CoreController::number
+    
+app_liip_test:
+    path: /liip/test
+    controller: App\Controller\CoreController::liip
