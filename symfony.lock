@@ -92,6 +92,15 @@
     "jms/metadata": {
         "version": "1.7.0"
     },
+    "lexik/maintenance-bundle": {
+        "version": "2.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.1",
+            "ref": "c7b1a155b60c553d2c6e272d210e8614c89a7e5c"
+        }
+    },
     "liip/imagine-bundle": {
         "version": "1.8",
         "recipe": {

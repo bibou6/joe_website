@@ -1,9 +1,15 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+core_homepage:
+    path: /{_locale}/
+    controller:  App\Controller\CoreController::indexWithLocal
+    requirements:
+      _locale: en|fr 
+      
+core_homepage_wo_locale:
+    path: /
+    controller: App\Controller\CoreController::index
 
 app_lucky_number:
-    path: /lucky/number
+    path: /{_locale}/lucky/number
     controller: App\Controller\CoreController::number
     
 app_liip_test:

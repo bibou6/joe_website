@@ -9,6 +9,7 @@ In this project you will find all the basics and some exemples in order to start
 - [WebPack Encore](https://symfony.com/doc/4.0/frontend/encore/installation.html)
 - [VichUploaderBundle](https://symfony.com/doc/master/bundles/EasyAdminBundle/integration/vichuploaderbundle.html)
 - [LiipImagineBundle](https://symfony.com/doc/2.0/bundles/LiipImagineBundle/introduction.html)
+- [LexikMaintenanceBundle](https://github.com/lexik/LexikMaintenanceBundle/blob/master/Resources/doc/index.md)
 
 ## How to install
 
@@ -22,7 +23,7 @@ In this project you will find all the basics and some exemples in order to start
 composer install
 
 //Create the database
-//Mine in named 'template' if you want to change it, edit .env file at project root
+//Mine is named 'template' if you want to change it, edit .env file at project root
 //line: DATABASE_URL=mysql://root:@127.0.0.1:3306/template change template to whatever pleases you
 //then
 php bin/console doctrine:database:create
