@@ -1,0 +1,12 @@
+liip_imagine:
+#    # valid drivers options include "gd" or "gmagick" or "imagick"
+    driver: "gd"
+#    # define your filter sets under this option
+    filter_sets:
+#        # https://symfony.com/doc/current/bundles/LiipImagineBundle/basic-usage.html#create-thumbnails
+      pension_list_height:
+            quality: 80
+            filters:
+                scale:
+                    # input 1200x1600px -> output 750x1000px (relative down-scale)
+                    dim: [ 500, 350 ]
