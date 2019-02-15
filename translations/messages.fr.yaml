@@ -1,2 +1,10 @@
-template:
-  name: Template_FR
+website:
+  name: Joe
+menu:
+  home: Accueil
+  oil: Huile
+  mix: Mixte media
+  drawing: Dessin
+  contact: Contact
+  language: Langues
+name: Template_FR
