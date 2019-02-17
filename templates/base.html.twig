@@ -5,10 +5,8 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
             {# 'app' must match the first argument to addEntry() in webpack.config.js #}
-            {{ encore_entry_link_tags('app') }}
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <!-- Renders a link tag (if your module requires any CSS)
-                 <link rel="stylesheet" href="/build/app.css"> -->
+			{{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
     <body>

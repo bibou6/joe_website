@@ -8,3 +8,11 @@ menu:
   contact: Contact
   language: Langues
 name: Template_FR
+
+
+art:
+  medium:
+    oil: Huile
+    mix: Mixte Media
+    drawing: Dessin
+    

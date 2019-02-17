@@ -1,2 +1,16 @@
-template:
-  name: Template_EN
+website:
+  name: Joe
+menu:
+  home: Home
+  oil: Oil
+  mix: Mix Media
+  drawing: Drawing
+  contact: Contact
+  language: Languages
+name: Template_EN
+
+art:
+  medium:
+    oil: Oil
+    mix: Mix Media
+    drawing: Drawing

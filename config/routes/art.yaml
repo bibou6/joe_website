@@ -1,0 +1,11 @@
+oil_art_list:
+  path: /{_locale}/art/oil/list
+  controller: App\Controller\ArtController::listOil
+  
+mix_art_list:
+  path: /{_locale}/art/mix/list
+  controller: App\Controller\ArtController::listMix
+  
+drawing_art_list:
+  path: /{_locale}/art/drawing/list
+  controller: App\Controller\ArtController::listDrawing

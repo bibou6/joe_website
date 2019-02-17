@@ -1,14 +1,19 @@
 easy_admin:
-    site_name: 'Template'
+    site_name: 'Joe'
     design:
-        brand_color: '#1ABC9C'
+        brand_color: '#000000'
     entities:
         # List the entity class name you want to manage
-        Product:
-            class: 'App\Entity\Product'
+        Art:
+            class: 'App\Entity\Art'
             form:
                 fields:
-                    - { property: 'name' }
+                    - { property: 'title' }
+                    - { property: 'available' }
+                    - { property: 'height' }
+                    - { property: 'width' }
+                    - { property: 'price', type: 'money', type_options: { currency: 'CAD' } }
+                    - { property: 'medium', type: 'choice', type_options: { choices : { 'Oil' : 'Oil', 'Mixte Media' : 'Mix', 'Drawing': 'Drawing' } } }
                     - { property: 'imageFile', type: 'vich_image' }
             list:
                 actions: 
@@ -16,8 +21,11 @@ easy_admin:
                     - { name: 'edit', icon: 'pencil', label: false }  
                     - { name: 'delete', icon: 'trash', label: false }
                 fields:
-                    - id
-                    - { property: 'name'}
-                    - { property: 'image', type: 'image', base_path: '%app.path.product_images%', label: 'Images' }
+                    - { property: 'image', type: 'image', base_path: '%app.path.art_images%', label: 'Images' }
+                    - { property: 'title' }
+                    - { property: 'medium' }
+                    - { property: 'available' }
+                    - { property: 'size' }
+                    - { property: 'price'}
 #        - App\Entity\Category
 #        - App\Entity\User

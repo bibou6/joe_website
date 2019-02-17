@@ -10,3 +10,23 @@ liip_imagine:
                 scale:
                     # input 1200x1600px -> output 750x1000px (relative down-scale)
                     dim: [ 500, 350 ]
+      art_list_crop:
+          filters:
+                # use and setup the "crop" filter
+                scale:
+                    # input 1200x1600px -> output 750x1000px (relative down-scale)
+                    dim: [ 500, 500 ]
+                crop:
+                    # set the size of the cropping area
+                    size: [ 300, 300 ]
+                    # set the starting coordinates of the crop
+                    start: [ 000, 000 ]
+      art_list_thumbnail:
+          filters:
+              thumbnail:
+
+                    # set the thumbnail size to "32x32" pixels
+                    size: [300, 300]
+
+                    # crop the input image, if required
+                    mode: outbound
